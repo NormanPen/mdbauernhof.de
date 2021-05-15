@@ -23,7 +23,7 @@ function App() {
 
   useEffect(() => {
     const hideMenu = () => {
-      if(window.innerWidth > 768 && isOpen) {
+      if(window.innerWidth > 767 && isOpen) {
         setIsOpen(false);
         console.log("i resize");
       }

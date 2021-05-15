@@ -3,30 +3,33 @@ import Logo from "../../media/images/Logo.svg";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 
-
-
 const menuItems = [
   {
+    id: "1",
     title: "Home",
     path: "/",
     className: "",
   },
   {
+    id: "2",
     title: "Über Uns",
     path: "/ueberuns",
     className: "",
   },
   {
+    id: "3",
     title: "Programm",
     path: "/programm",
     className: "",
   },
   {
+    id: "4",
     title: "Unsere Tiere",
     path: "/tiere",
     className: "",
   },
   {
+    id: "5",
     title: "Kontakt",
     path: "/kontakt",
     className: "",
@@ -49,49 +52,31 @@ const Navigation = ({ toggle }) => {
 
       <div className="">
         <ul className="hidden md:flex">
-          {menuItems.map((item) => {
+          {menuItems.map((id, index) => {
             return (
-              <li>
-                <Link className={item.className} to={item.path}>
-                  {item.title}
+              <li key={index}>
+                <Link className={id.className} to={id.path}>
+                  {id.title}
                 </Link>
               </li>
             );
           })}
-          ;
-          <div className="hidden sozial-links">
-            <a
-              href={
-                "https://www.facebook.com/Erlebniswelt-Bauernhof-401255466649319/"
-              }
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="social-media-icon social-media-icon-facebook"></div>
-            </a>
-
-            <a
-              href={
-                "https://www.facebook.com/Erlebniswelt-Bauernhof-401255466649319/"
-              }
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="social-media-icon social-media-icon-instagram"></div>
-            </a>
-          </div>
         </ul>
       </div>
       <div
         className="bg-red-300 md:hidden hamburger-toggle w-14"
-        onClick={toggle}>
-        <div>
+        onClick={toggle}
+      >
+        <div
+          onClick={handleClick}
+          className={`burger-item ${click ? "active" : ""}`}
+        >
           <div className="burger-line"></div>
           <div className="burger-line"></div>
           <div className="burger-line"></div>
         </div>
         <div>
-          <p> Menu</p>
+          <p>{click ? "schließen" : "Menü"}</p>
         </div>
       </div>
     </nav>
