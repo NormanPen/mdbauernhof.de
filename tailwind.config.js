@@ -5,7 +5,10 @@ module.exports = {
     extend: {
       fontFamily: {
         'Atma': ['Atma', 'cursive'],
-        'signika-negative': ['"Signika Negative"', 'sans-serif']
+        'Signika-Negative': ['"Signika Negative"', 'sans-serif']
+      },
+      spacing: {
+        sm: '3px'
       }
     },
   },

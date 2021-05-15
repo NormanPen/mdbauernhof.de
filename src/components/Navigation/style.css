@@ -1,0 +1,40 @@
+.burger-line {
+  height: 3px;
+  background: black;
+  margin-bottom: 4px;
+
+  transition: all 0.4s ease; /* important for animation */
+}
+
+.burger-item {
+  width: 25px;
+  cursor: pointer;
+}
+
+.burger-item.active .burger-line:last-child {
+  opacity: 0;
+}
+.burger-item.active .burger-line:first-child {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+.burger-item.active .burger-line:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.social-media-icon {
+  width: 54px;
+  height: 54px;
+}
+
+.social-media-icon-facebook {
+  background-image: url("../../media/images/facebooklogo.svg");
+}
+
+.social-media-icon-instagram {
+  background-image: url("../../media/images/instagrammlogo.svg");
+}
+
+.nav-items.active {
+    display: block;
+}
+
