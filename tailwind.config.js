@@ -2,7 +2,12 @@ module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'Atma': ['Atma', 'cursive'],
+        'signika-negative': ['"Signika Negative"', 'sans-serif']
+      }
+    },
   },
   variants: {
     extend: {},
