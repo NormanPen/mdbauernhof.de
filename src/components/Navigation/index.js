@@ -40,10 +40,10 @@ const Navigation = ({ toggle }) => {
   const handleClick = () => setClick(!click);
 
   return (
-    <nav className="relative flex items-center justify-between h-16">
-      <div className="flex">
+    <nav className="absolute flex justify-between w-screen h-16 pt-5">
+      <div className="flex pl-5">
         <img src={Logo} alt="Logo" />
-        <h1>
+        <h1 className="pl-3 text-base text-web-blue">
           Erlebniswelt
           <br />
           Bauernhof
@@ -63,21 +63,21 @@ const Navigation = ({ toggle }) => {
           })}
         </ul>
       </div>
-      <div
-        className="bg-red-300 md:hidden hamburger-toggle w-14"
-        onClick={toggle}
-      >
-        <div
-          onClick={handleClick}
-          className={`burger-item ${click ? "active" : ""}`}
-        >
-          <div className="burger-line"></div>
-          <div className="burger-line"></div>
-          <div className="burger-line"></div>
+
+      <div className="grid justify-center md:hidden">
+        <div className="grid justify-center w-20" onClick={toggle}>
+          <div
+            onClick={handleClick}
+            className={`burger-item ${click ? "active" : ""}`}
+          >
+            <div className="burger-line"></div>
+            <div className="burger-line"></div>
+            <div className="burger-line"></div>
+          </div>
         </div>
-        <div>
-          <p>{click ? "schließen" : "Menü"}</p>
-        </div>
+        <p className="text-center text-web-blue">
+          {click ? "schließen" : "Menü"}
+        </p>
       </div>
     </nav>
   );
