@@ -37,7 +37,7 @@ function App() {
   
   return (
     <Router>
-      <div className="bg-red-400 App">
+      <div className="App">
 
         <Navigation toggle={toggle}/>
         <Dropdown isOpen={isOpen} toggle={toggle} />
