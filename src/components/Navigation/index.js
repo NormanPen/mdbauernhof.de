@@ -43,7 +43,7 @@ const Navigation = ({ toggle }) => {
     <nav className="absolute flex justify-between w-screen h-16 pt-5">
       <div className="flex pl-5">
         <img src={Logo} alt="Logo" />
-        <h1 className="pl-3 text-base text-web-blue">
+        <h1 className="pl-3 text-base font-medium text-web-blue">
           Erlebniswelt
           <br />
           Bauernhof
