@@ -1,12 +1,12 @@
 import bauernhof from "../../media/images/bauernhof.png";
-
-const HeaderMain = () => {
+import ButtonMain from "../../components/ButtonMain";
+const HeaderMain = (props) => {
   return (
     <div>
       <img src={bauernhof} alt="bauernhof" />
-      <h1>Herzlich Willkommen auf unserem Hof</h1>
-      <p>Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem.</p>
-      <button>Jetzt entdecken</button>
+      <h1>{props.heading}</h1>
+      <p>{props.children}</p>
+<ButtonMain to={"#"}>Jetzt entdencken</ButtonMain>
     </div>
   );
 };
