@@ -51,10 +51,13 @@ const Navigation = ({ toggle }) => {
       </div>
 
       <div className="">
-        <ul className="hidden md:flex">
+        <ul className="hidden text-2xl pr-28 md:flex font-Atma text-web-blue">
           {menuItems.map((id, index) => {
             return (
-              <li key={index}>
+              <li
+                key={index}
+                className="ml-12 border-b-4 border-transparent hover:border-blue-800"
+              >
                 <Link className={id.className} to={id.path}>
                   {id.title}
                 </Link>
