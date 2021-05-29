@@ -2,10 +2,24 @@ import ButtonMain from "../ButtonMain";
 
 const CardMain = (props) => {
   return (
-    <article className="text-center bg-pink-400">
-      <img src={props.imgsrc} alt={props.imgalt} />
-      <h3 className="text-2xl font-medium font-Atma">{props.heading}</h3>
-      <p className="font-Signika-Negative">{props.children}</p>
+    <article className="relative pt-24 text-center">
+      <img
+        className="absolute right-0 top-40 md:hidden -z-10"
+        src={props.bgImgSrc}
+        alt={props.bgImgAlt}
+      />
+      <div>
+        <img className="" src={props.bgImgSrc} alt={props.bgImgAlt} />
+      </div>
+      <div className="flex justify-center">
+        <img
+          src={props.imgsrc}
+          alt={props.imgalt}
+          className="w-11/12 h-11/12"
+        />
+      </div>
+      <h3 className="pt-10 text-2xl font-medium font-Atma">{props.heading}</h3>
+      <p className="pt-5 font-Signika-Negative">{props.children}</p>
       <ButtonMain>{props.btnText}</ButtonMain>
     </article>
   );

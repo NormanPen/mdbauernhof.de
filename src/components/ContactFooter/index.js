@@ -1,25 +1,23 @@
 import bgcontactfooter from "../../media/images/bgContactFooter.png";
 import mailicon from "../../media/images/Mail.svg";
 
-
 const picStyle = {
-    width: "38.03px",
-    height: "51px",
-    
-}
+  width: "38.03px",
+  height: "51px",
+};
 
 const ContactFooter = () => {
   return (
     <div
-      className="text-center h-96"
+      className="mt-24 text-center h-96"
       style={{ backgroundImage: `url(${bgcontactfooter})` }}
     >
-        <div className="flex justify-center pt-20">
+      <div className="flex justify-center pt-20">
         <img style={picStyle} className="" src={mailicon} alt="Mail Symbol" />
-        </div>
-      
+      </div>
+
       <h3 className="pt-5 text-3xl font-Atma">Kontakt</h3>
-      <p className="pt-4">
+      <p className="px-4 pt-4">
         Sie möchten mehr Informationen oder eine Buchung anfragen? Dann
         kontaktieren Sie uns gerne.
       </p>

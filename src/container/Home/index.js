@@ -7,6 +7,7 @@ import CardPic from "../../components/CardPic";
 import CardIcon from "../../components/CardIcon";
 
 import bgMobileBlue from "../../media/images/bgMobileBlue.png";
+import bgMobileRosa from "../../media/images/bgMobileRosa.png";
 import bauernhof from "../../media/images/bauernhof.png";
 import margotundhans from "../../media/images/MargotUndHans.png";
 import kinder1 from "../../media/images/Kids1.png";
@@ -40,6 +41,8 @@ const Home = () => {
         btnText="Über uns"
         imgalt="Margot und Hans"
         imgsrc={margotundhans}
+        bgImgSrc={bgMobileRosa}
+        bgImgAlt="Hintergrundbild"
       >
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
