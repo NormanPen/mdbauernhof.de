@@ -14,7 +14,10 @@ module.exports = {
         "web-yellow": "#EECE42",
         "web-red": "#AB316A",
         "web-green": "#97AC6C",
-        "web-orange": "#DD8756"
+        "web-orange": "#DD8756",
+      },
+      zIndex: {
+        "-10": "-10",
       },
     },
   },
