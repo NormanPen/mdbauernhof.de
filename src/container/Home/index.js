@@ -22,7 +22,8 @@ const Home = () => {
         bgImgSrc={bgMobileBlue}
         imgSrc={bauernhof}
         imgAlt="Bauernhof"
-        btnText="Jetzt entdecken"
+        btnText="Jetzt entdecekennnnnn"
+        btnPath="/tiere"
       >
         Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem.
       </HeaderMain>

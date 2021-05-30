@@ -4,13 +4,11 @@ const CardMain = (props) => {
   return (
     <article className="relative pt-24 text-center">
       <img
-        className="absolute right-0 top-40 md:hidden -z-10"
+        className="absolute right-0 top-48 md:hidden -z-10"
         src={props.bgImgSrc}
         alt={props.bgImgAlt}
       />
-      <div>
-        <img className="" src={props.bgImgSrc} alt={props.bgImgAlt} />
-      </div>
+
       <div className="flex justify-center">
         <img
           src={props.imgsrc}

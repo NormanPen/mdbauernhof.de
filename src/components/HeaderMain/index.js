@@ -1,4 +1,5 @@
-import ButtonMain from "../../components/ButtonMain";
+//import { Link } from "react-router-dom";
+import LinkButton from "../ButtonLink";
 
 const HeaderMain = (props) => {
   return (
@@ -15,7 +16,7 @@ const HeaderMain = (props) => {
           <p className="pt-5 text-base font-Signika-Negative">
             {props.children}
           </p>
-          <ButtonMain to={"#"}>{props.btnText}</ButtonMain>
+          <LinkButton to={props.btnPath}>{props.btnText}</LinkButton>
         </div>
       </div>
     </div>

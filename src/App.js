@@ -43,8 +43,8 @@ function App() {
         <Dropdown isOpen={isOpen} toggle={toggle} />
         <Switch>
         <Route path="/" exact component={Home}></Route>
-        <Route path="/about" component={About}></Route>
-        <Route path="/program" component={Program}></Route>
+        <Route path="/ueberuns" component={About}></Route>
+        <Route path="/programm" component={Program}></Route>
         <Route path="/tiere" component={Animals}></Route>
         <Route path="/kontakt" component={Contact}></Route>
           
