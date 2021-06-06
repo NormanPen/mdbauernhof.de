@@ -22,10 +22,10 @@ const Home = () => {
         bgImgSrc={bgMobileBlue}
         imgSrc={bauernhof}
         imgAlt="Bauernhof"
-        btnText="Jetzt entdecekennnnnn"
+        btnText="Jetzt entdecken"
         btnPath="/tiere"
       >
-        Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem.
+        Entdecken Sie den Erlebniswelt Bauernhof der Familie Döpper.
       </HeaderMain>
 
       <FlagImg />
@@ -45,9 +45,10 @@ const Home = () => {
         bgImgSrc={bgMobileRosa}
         bgImgAlt="Hintergrundbild"
       >
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores
+        Hans Döpper war bis 20xx Vollerwerbslandwirt mit 100 Tieren. Der
+        ehemalige Vollerwerbs-Milchviehbetrieb wird nun als Bio-Mischbetrieb
+        geführt. Margot Döpper gründete Erlebniswelt Bauernhof um den Kindern
+        die Tier - und Pflanzenwelt nahezubringen.
       </CardMain>
       <CardMain
         heading="Spielend lernen"
@@ -55,9 +56,9 @@ const Home = () => {
         imgalt="Kinder auf Hof"
         imgsrc={kinder1}
       >
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores
+        Kindergeburtstage sind das Herzstück der Erlebniswelt Bauernhof. Durch
+        das spielerische Lernen und Erfahren, haben die Kinder einen
+        unvergessliches Tag mit Erlebnissen die lange im Gedächtnis bleiben.
       </CardMain>
 
       <CardPic imgsrc={donkey1} imgalt="Esel" />
@@ -67,12 +68,12 @@ const Home = () => {
         heading="Unsere Tiere"
         btnText="Tiere kennenlernen"
       >
-        In this reinvented flick, which hovers like a Matisse cutout between the
-        lashline and brow bone, curved crease of the eyelid, while the top is a
-        long, flat line that extends past the outer corners.
+        Durch die Vielzahl an Tieren ist für jeden eine Tierart dabei, die näher
+        entdeckt werden will. Unsere Tiere freuen sich immer über nette Besucher
+        und lieben Streicheleinheiten.
       </CardIcon>
 
-      <ContactFooter></ContactFooter>
+      <ContactFooter/>
     </div>
   );
 };
