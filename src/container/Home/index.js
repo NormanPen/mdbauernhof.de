@@ -23,7 +23,7 @@ const Home = () => {
         imgSrc={bauernhof}
         imgAlt="Bauernhof"
         btnText="Jetzt entdecken"
-        btnPath="/tiere"
+        btnPath="test"
       >
         Entdecken Sie den Erlebniswelt Bauernhof der Familie Döpper.
       </HeaderMain>

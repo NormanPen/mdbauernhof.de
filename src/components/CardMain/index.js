@@ -2,7 +2,7 @@ import ButtonMain from "../ButtonMain";
 
 const CardMain = (props) => {
   return (
-    <article className="relative pt-24 text-center">
+    <article className="relative pt-24 text-center" id="test">
       <img
         className="absolute right-0 top-48 md:hidden -z-10"
         src={props.bgImgSrc}
