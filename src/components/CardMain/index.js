@@ -4,7 +4,7 @@ const CardMain = (props) => {
   return (
     <article className="relative pt-24 text-center" id="test">
       <img
-        className="absolute right-0 top-48 md:hidden -z-10"
+        className="absolute left-0 w-full top-48 lg:hidden -z-10"
         src={props.bgImgSrc}
         alt={props.bgImgAlt}
       />
@@ -17,8 +17,8 @@ const CardMain = (props) => {
         />
       </div>
       <h3 className="pt-10 text-2xl font-medium font-Atma">{props.heading}</h3>
-      <p className="pt-5 font-Signika-Negative">{props.children}</p>
-      <ButtonMain>{props.btnText}</ButtonMain>
+      <p className="px-6 pt-5 font-Signika-Negative">{props.children}</p>
+      <ButtonMain color={props.color}>{props.btnText}</ButtonMain>
     </article>
   );
 };

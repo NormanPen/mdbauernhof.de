@@ -51,7 +51,7 @@ const Navigation = ({ toggle }) => {
       </div>
 
       <div className="" >
-        <ul  className="hidden text-2xl pr-28 md:flex font-Atma text-web-blue">
+        <ul  className="hidden text-2xl pr-28 lg:flex font-Atma text-web-blue">
           {menuItems.map((id, index) => {
             return (
               <li 
@@ -67,7 +67,7 @@ const Navigation = ({ toggle }) => {
         </ul>
       </div>
 
-      <div className="grid justify-center md:hidden">
+      <div className="grid justify-center lg:hidden">
         <div className="grid justify-center w-20" onClick={toggle}>
           <div
             onClick={handleClick}

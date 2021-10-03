@@ -24,6 +24,7 @@ const Home = () => {
         imgAlt="Bauernhof"
         btnText="Jetzt entdecken"
         btnPath="test"
+        color="bg-web-blue-dark"
       >
         Entdecken Sie den Erlebniswelt Bauernhof der Familie Döpper.
       </HeaderMain>

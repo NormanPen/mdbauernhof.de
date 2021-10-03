@@ -9,7 +9,7 @@ const picStyle = {
 const ContactFooter = () => {
   return (
     <div
-      className="mt-24 text-center h-96"
+      className="mt-24 text-center bg-cover h-96"
       style={{ backgroundImage: `url(${bgcontactfooter})` }}
     >
       <div className="flex justify-center pt-20">
